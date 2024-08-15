@@ -1,0 +1,102 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: radial-gradient(circle at 50% 101.25%, #3513f5 0, #222367 16.67%, #235aff 33.33%, #1033f8 50%, #060b6f 66.67%, #3975f8 83.33%, #35376d 100%);
+  color: rgba(255, 255, 255, 0.659);
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 20px;
+  gap: 10px;
+}
+
+.footer-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  color: yellow;
+}
+
+.footer-rights {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.box_1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.box_2{
+  width: 90%;
+  border-top: 1px solid yellow;
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-item {
+    margin: 10px 0;
+    transform: scale(1.2); /* El texto se infla un 20% al pasar el mouse */
+  }
+}
+
+
+.div_link{
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 2px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+  overflow: hidden;
+   
+  box-shadow: rgba(252, 252, 252, 0.111) 0px 2px 25px -5px, rgba(225, 225, 225, 0.193) 0px 10px 10px -5px;
+}
+
+.div_link a{
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.whatsapp-link {
+  color: inherit; /* Mantiene el color del texto igual */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease; /* Se agrega la transición de background-color */
+  border-radius: 8px;
+  padding: 20px;
+  
+}
+
+.div_link a:hover{
+  transform: scale(1.2); /* El texto se infla un 20% al pasar el mouse */
+  color: yellow;
+  background-color: rgba(220, 220, 220, 0.304);
+  border-start-end-radius:45px;
+  font-weight: 700;
+  border: 1px solid yellow;
+}
+
+.whatsapp-link:hover {
+  color: yellow; /* Color del texto al pasar el mouse */
+  
+}
+
