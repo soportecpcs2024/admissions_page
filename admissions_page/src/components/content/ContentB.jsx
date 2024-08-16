@@ -15,11 +15,12 @@ const ContentB = () => {
       <div className="right-section">
         <div className="card-reserva">
           <FaRegCalendarAlt className="icon" />
-          Reserva de cupo
+          <a href="https://cpcs.q10.com/SolicitudesInstitucionales/NuevaSolicitud" className='a-links'>Reserva de cupo</a>
+          
         </div>
         <div className="card-reserva">
           <FaSearch className="icon" />
-          Consultar estado de la reserva
+         <a href="https://cpcs.q10.com/SolicitudesInstitucionales/ConsultarSolicitud" className='a-links'>Consultar estado de la reserva</a> 
         </div>
       </div>
     </div>

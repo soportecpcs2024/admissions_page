@@ -38,7 +38,9 @@ const Content = () => {
         src="https://www.youtube.com/embed/Oy20XZLnQAc?si=zsL6W0OCickb21pY"
         title="Video Admisiones"
         allowFullScreen
+        loading="lazy"
       ></iframe>
+
       <div className="main-buttons">
         <a href="https://cpcs.q10.com/Preinscripcion" className="btn btn-info">
           <span>Nuevos</span>

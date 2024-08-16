@@ -8,6 +8,16 @@
     background-image: radial-gradient(ellipse farthest-corner at 45px 30px, #fff 50%, rgba(0, 255, 0, 0) 0%, yellow 50%);
 }
 
+.a-links{
+    color: white;
+    text-decoration: none;
+}
+
+.a-links:hover {
+    transform: translateY(-5px);
+     
+    color: yellow;
+}
 /* Secciones izquierda y derecha */
 .left-section,
 .right-section {
