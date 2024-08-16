@@ -1,26 +1,39 @@
+main{
+
+  width: 100vw;
+  background-image: radial-gradient(ellipse farthest-corner at 45px 30px , #fff 50%, rgba(0, 255, 0, 0) 0%, yellow 50%);
+  margin: 0;
+  padding: 0;
+}
 .main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+   
   text-align: center;
+  
 }
 
 .main-content h1 {
-  width: 70%;
+  width: 100%;
+  max-width: 1200px;
   font-size: 2rem;
   margin-bottom: 20px;
   color: #333;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-   
+  padding: 10px 20px;
 }
 
+.main-content-p{
+  padding: 10px 20px;
+}
 .main-content p {
-  width: 70%;
-  font-size: 1.2rem;
+  width: 100%;
+  max-width: 1200px;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   text-align: justify;
   font-family: "Frank Ruhl Libre", serif;
@@ -28,12 +41,23 @@
   font-style: normal;
   color: #555;
   line-height: 1.6;
+  
+   
+   
+}
+
+.admission-video {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  aspect-ratio: 16/9;
+   
 }
 
 .main-buttons {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -42,8 +66,8 @@
   position: relative;
   display: inline-block;
   padding: 12px 25px;
-  margin: 10px;
-  border-radius: 10px;
+  margin: 8px;
+  border-radius: 6px;
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
@@ -64,12 +88,14 @@
 }
 
 .btn-info {
-  background-color: #007BFF;
+    
+  background-image: radial-gradient(circle at 10% 101.25%, #3513f5 0, #222367 16.67%, #235aff 33.33%, #1033f8 50%, #060b6f 66.67%, #3975f8 83.33%, #35376d 100%);
+
 }
 
 .btn-apply {
-  background-color: #007BFF;
-   
+  background-image: radial-gradient(circle at 10% 101.25%, #3513f5 0, #222367 16.67%, #235aff 33.33%, #1033f8 50%, #060b6f 66.67%, #3975f8 83.33%, #35376d 100%);
+
 }
 
 .btn-info:hover {
@@ -78,29 +104,95 @@
 
 .btn-apply:hover {
   background-color: #0056b3;
-   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 2500px){
+  .admission-video {
+    width: 50%;
+    height: auto; 
+  }
+
+}
+@media (max-width: 1200px) {
   .main-content h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .main-content p {
     font-size: 1rem;
   }
+  .admission-video {
+    width: 60%;
+    height: auto; 
+  }
+ 
+}
 
-  .main-buttons {
-    flex-direction: column;
+@media (max-width: 992px) {
+  .main-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-content p {
+    font-size: 14px;
   }
 
   .btn {
-    width: 80%;
-    text-align: center;
+    padding: 10px 20px;
   }
 
-  iframe {
+  .btn span {
+    font-size: 0.95rem;
+  }
+  .admission-video {
+    width: 80%;
+    height: auto; 
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .main-content h1 {
+    font-size: 1.25rem;
+  }
+
+  .main-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
     width: 100%;
-    height: auto;
+    text-align: center;
+    padding: 8px 15px;
+  }
+
+  .btn span {
+    font-size: 0.85rem;
+  }
+  .admission-video {
+    width: 90%;
+    height: auto; 
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content h1 {
+    font-size: 1rem;
+  }
+
+  .main-content p {
+    font-size: 14px;
+    padding: 2px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .admission-video {
+    width: 100%;
+     
   }
 }

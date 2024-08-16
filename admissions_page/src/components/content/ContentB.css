@@ -1,0 +1,212 @@
+/* Estilos base */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: radial-gradient(ellipse farthest-corner at 45px 30px, #fff 50%, rgba(0, 255, 0, 0) 0%, yellow 50%);
+}
+
+/* Secciones izquierda y derecha */
+.left-section,
+.right-section {
+    width: 50%;
+}
+
+/* Contenedor de imagen y texto */
+.image-text-container {
+    position: relative;
+}
+
+.reserva-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: brightness(0.7);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-5%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Frank Ruhl Libre", serif;
+    margin-left: 30px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección derecha con tarjetas */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.card-reserva {
+    background-image: radial-gradient(circle at 10% 101.25%, #3513f5 0, #222367 16.67%, #235aff 33.33%, #1033f8 50%, #060b6f 66.67%, #3975f8 83.33%, #35376d 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Frank Ruhl Libre", serif;
+}
+
+.card-reserva:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: yellow;
+}
+
+.icon {
+    font-size: 1.5rem;
+    border: 1px solid yellow;
+    border-radius: 50px;
+    padding: 5px;
+    color: yellow;
+}
+
+/* Pantallas de 2500px y más */
+@media (min-width: 2500px) {
+    .overlay-text {
+        font-size: 2rem;
+    }
+
+    .card-reserva {
+        font-size: 2rem;
+        padding: 20px 30px;
+    }
+
+    .icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* Pantallas de 1200px a 2499px */
+@media (min-width: 1200px) and (max-width: 2499px) {
+    .overlay-text {
+        font-size: 1.8rem;
+    }
+
+    .card-reserva {
+        font-size: 1.8rem;
+        padding: 18px 25px;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+}
+
+/* Pantallas de 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .overlay-text {
+        font-size: 1.5rem;
+    }
+
+    .left-section,
+    .right-section {
+        width: 50%;
+    }
+
+    .card-reserva {
+        font-size: 1.5rem;
+        padding: 26px 22px;
+    }
+
+    .icon {
+        font-size: 1.8rem;
+    }
+}
+
+/* Pantallas de 768px a 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .reserva-image {
+        width: 80%;
+        margin-left: 70px;
+    }
+
+    .overlay-text {
+        margin-left: 40px;
+    }
+
+    .right-section {
+        justify-content: center;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+
+    .overlay-text {
+        font-size: 1.3rem;
+    }
+
+    .card-reserva {
+        font-size: 1.3rem;
+        padding: 14px 20px;
+    }
+
+    .icon {
+        font-size: 1.6rem;
+    }
+}
+
+/* Pantallas de 480px a 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    .content-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .overlay-text {
+        font-size: 1.1rem;
+        left: 5%;
+        transform: translate(-5%, -50%);
+    }
+
+    .card-reserva {
+        font-size: 1.1rem;
+        padding: 12px 18px;
+    }
+
+    .icon {
+        font-size: 1.4rem;
+    }
+}
+
+/* Pantallas menores a 480px */
+@media (max-width: 479px) {
+    .content-container {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+        left: 5%;
+        transform: translate(-5%, -50%);
+    }
+
+    .card-reserva {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+}

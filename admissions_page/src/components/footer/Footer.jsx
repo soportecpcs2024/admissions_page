@@ -9,6 +9,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="box_1">
+        
         <div className="footer-item">
           <FaSchoolCircleCheck className="footer-icon" />
           <p>

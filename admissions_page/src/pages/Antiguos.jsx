@@ -1,9 +1,14 @@
 import React from 'react'
+import Header from '../components/header/Header'
+import Footer from '../components/footer/Footer'
+import ContentB from '../components/content/ContentB'
 
 const Antiguos = () => {
   return (
     <div>
-      <h1>Antiguos</h1>
+      <Header />
+     <ContentB />
+      <Footer />
     </div>
   )
 }

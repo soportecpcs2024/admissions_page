@@ -1,18 +1,40 @@
 .header {
   width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 5px;
     background-image: radial-gradient(circle at 50% -20.71%, #a3a7ff 0, #7a8ffc 25%, #3c78f2 50%, #0063e8 75%, #0051de 100%);
     color: white;
   }
 
   .header h2{
-    font-size: 35px;
-    font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 45px;
+  }
+
+  .header span{
+    color: yellow;
+    font-weight: 900;
+  }
+
+  .header_link_return{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 20px;
+    margin-top: -10px;
+    
+  }
+  
+  .header_link_return a{
+     
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(242, 242, 242, 0.311) 0px 0px 16px;
+
   }
   
   .header-logo {
@@ -21,16 +43,16 @@
   }
   
   .logo-img {
-    height: 70px;
-    margin-right: 10px;
+    height: 80px;
+     
   }
   
   .header-link {
-    color: white;
+    color: rgba(255, 255, 255, 0.573);
     text-decoration: none;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .header {
       flex-direction: column;
       text-align: center;
@@ -39,5 +61,38 @@
     .header-logo {
       margin-bottom: 10px;
     }
+    .header h2{
+      font-size: 28px;
+      
+    }
+     
+  }
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+     
+    
+  .header h2{
+    font-size: 38px;
+    
+  }
+  
+    .header-logo {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  @media (max-width: 2500px){
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    
+ 
+     
   }
   
