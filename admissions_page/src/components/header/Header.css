@@ -62,8 +62,8 @@
       margin-bottom: 10px;
     }
     .header h2{
-      font-size: 28px;
-      
+      font-size: 14px;
+       
     }
      
   }
@@ -75,8 +75,11 @@
      
     
   .header h2{
-    font-size: 38px;
+    font-size: 26px;
     
+  }
+  .header_link_return a{
+    font-size: 10px;
   }
   
     .header-logo {

@@ -4,13 +4,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+     
     background-image: radial-gradient(ellipse farthest-corner at 45px 30px, #fff 50%, rgba(0, 255, 0, 0) 0%, yellow 50%);
 }
 
 /* Secciones izquierda y derecha */
 .left-section,
 .right-section {
-    width: 50%;
+    width: 100%;
 }
 
 /* Contenedor de imagen y texto */
