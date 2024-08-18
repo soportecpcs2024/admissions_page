@@ -53,17 +53,19 @@
 .div_link{
   position: relative;
   display: inline-block;
-  padding: 5px 15px;
-  margin: 2px;
+  padding: 0px 15px;
+  margin: 0px;
+  border: 2px solid yellow;
   border-radius: 10px;
   text-decoration: none;
-  color: #ffffff;
+  color: #090909;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: background-color 0.3s;
   overflow: hidden;
-   
+  background-color: rgba(249, 241, 241, 0.753);
+  font-weight: 900;
   box-shadow: rgba(252, 252, 252, 0.111) 0px 2px 25px -5px, rgba(225, 225, 225, 0.193) 0px 10px 10px -5px;
 }
 
@@ -76,17 +78,18 @@
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease; /* Se agrega la transición de background-color */
   border-radius: 8px;
-  padding: 20px;
+  padding: 10px;
   
 }
 
 .div_link a:hover{
   transform: scale(1.2); /* El texto se infla un 20% al pasar el mouse */
   color: yellow;
-  background-color: rgba(220, 220, 220, 0.304);
-  border-start-end-radius:45px;
+  background-image: radial-gradient(circle at 50% 101.25%, #3513f5 0, #222367 16.67%, #235aff 33.33%, #1033f8 50%, #060b6f 66.67%, #3975f8 83.33%, #35376d 100%);
+ 
+   
   font-weight: 700;
-  border: 1px solid yellow;
+   
 }
 
 .whatsapp-link:hover {
