@@ -29,17 +29,17 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-item">
-          <IoLogoWhatsapp className="footer-icon" />
           <p>
             <strong>
               <div className="div_link">
+          <IoLogoWhatsapp className="footer-icon-whatsapp" />
                 <a
                   href="https://wa.me/573007277799"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="whatsapp-link"
                 >
-                  3007277799
+                  Colegio Panamericano Colombo Sueco
                 </a>
               </div>
             </strong>
