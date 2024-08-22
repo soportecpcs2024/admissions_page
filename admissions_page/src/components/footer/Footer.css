@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    
     background-image: radial-gradient(circle at 50% 101.25%, #3513f5 0, #222367 16.67%, #235aff 33.33%, #1033f8 50%, #060b6f 66.67%, #3975f8 83.33%, #35376d 100%);
     color: rgba(255, 255, 255, 0.659);
     text-align: center;
@@ -19,6 +20,7 @@
     align-items: center;
     margin: 10px 20px;
     gap: 10px;
+    font-size: 12px;
     
   }
 
@@ -218,9 +220,9 @@
       
     }
 
-    .div_link{
+    .div_link a{
       
-      font-size: 10px;
+      font-size: 8px;
       
     }
   }
