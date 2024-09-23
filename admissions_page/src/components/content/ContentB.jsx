@@ -19,7 +19,7 @@ const ContentB = () => {
           </LazyLoad>
           <p className="overlay-text">
             Para hacer tu reserva de cupo o consultar cómo va tu solicitud,
-            selecciona la opción que según tus necesidades.
+            selecciona la opción según tus necesidades.
           </p>
         </div>
       </div>
