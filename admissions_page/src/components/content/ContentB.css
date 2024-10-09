@@ -6,7 +6,7 @@
     padding: 20px;
     height: 100vh;
      
-    background-image: radial-gradient(ellipse farthest-corner at 45px 30px, #fff 50%, rgba(0, 255, 0, 0) 0%, yellow 50%);
+    background-image: radial-gradient(ellipse farthest-corner at 45px 30px, #fff 50%, rgba(0, 255, 0, 0) 0%, #fcdc14 50%);
 }
 
 .a-links{
@@ -17,7 +17,7 @@
 .a-links:hover {
     transform: translateY(-5px);
      
-    color: yellow;
+    color: #fcdc14;
 }
 /* Secciones izquierda y derecha */
 .left-section,
@@ -59,7 +59,7 @@
 }
 
 .card-reserva {
-    background-image: radial-gradient(circle at 10% 101.25%, #3513f5 0, #222367 16.67%, #235aff 33.33%, #1033f8 50%, #060b6f 66.67%, #3975f8 83.33%, #35376d 100%);
+    background-color: #044cac;
     color: white;
     padding: 15px 20px;
     border-radius: 10px;
@@ -77,15 +77,15 @@
 .card-reserva:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: yellow;
+    color: #fcdc14;
 }
 
 .icon {
     font-size: 1.5rem;
-    border: 1px solid yellow;
+    border: 1px solid #fcdc14;
     border-radius: 50px;
     padding: 5px;
-    color: yellow;
+    color: #fcdc14;
 }
 
 /* Pantallas de 2500px y más */

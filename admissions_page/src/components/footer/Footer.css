@@ -6,8 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    
-    background-image: radial-gradient(circle at 50% 101.25%, #3513f5 0, #222367 16.67%, #235aff 33.33%, #1033f8 50%, #060b6f 66.67%, #3975f8 83.33%, #35376d 100%);
+    background-color: #044cac;
     color: rgba(255, 255, 255, 0.659);
     text-align: center;
     font-family: "Nunito", sans-serif;
@@ -28,7 +27,7 @@
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
-    color: yellow;
+    color: #fcdc14 ;
   }
 
   .footer-rights {
@@ -45,7 +44,7 @@
 
   .box_2{
     width: 90%;
-    border-top: 1px solid yellow;
+    border-top: 1px solid #fcdc14 ;
   }
 
 
@@ -58,7 +57,7 @@
     justify-content: center;
     padding: 0px 5px;
     margin: 5px;
-    border: 2px solid yellow;
+    border: 2px solid #fcdc14 ;
     border-radius: 50px;
     text-decoration: none;
     color: #090909;
@@ -80,7 +79,7 @@
   }
 
   .footer-icon-whatsapp{
-    color: yellow;
+    color: #fcdc14 ;
     font-size: 38px;
      
     border-radius: 50px;
@@ -98,7 +97,7 @@
 
   .div_link:hover{
     
-    color: yellow;
+    color: #fcdc14 ;
     background-color: black;
     
    
