@@ -8,7 +8,7 @@ const Header = () => {
       <div className="header-logo">
         <img src={Logo} alt="Logo" className="logo-img" />
         <h2>
-          Admisiones 2025 <span>CPCS</span>
+          Admisiones 2026 <span>CPCS</span>
         </h2>
       </div>
       <div className="header_link_return">

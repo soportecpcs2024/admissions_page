@@ -11,11 +11,11 @@ const Content = () => {
 
   return (
     <main className="main-content">
-      <h1>Bienvenidos a las Admisiones 2025</h1>
+      <h1>Bienvenidos a las Admisiones 2026</h1>
       <div className="main-content-p">
         <p>
           Estamos emocionados de recibir a nuevos estudiantes para el año
-          académico 2025 en el Colegio Panamericano Colombo Sueco. A continuación, encontrarás toda la información necesaria para comenzar el proceso de admisión.
+          académico 2026 en el Colegio Panamericano Colombo Sueco. A continuación, encontrarás toda la información necesaria para comenzar el proceso de admisión.
         </p>
         <p>
           Nuestra oferta educativa es para todas las familias que deseen una excelente educación para sus hijos, con formación integral, con disciplina y esfuerzo, en donde las niñas y niños se conviertan en ciudadanos competentes y felices, capaces de responder a las exigencias del mundo actual con criterio ético y respeto, teniendo en cuenta nuestro enfoque basado en la palabra de Dios.
