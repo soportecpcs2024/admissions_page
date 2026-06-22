@@ -12,7 +12,7 @@ const Header = () => {
           <div className="header__text">
             <span className="header__subtitle">Proceso institucional</span>
             <h1>
-              Admisiones <strong>2026</strong>
+              Admisiones <strong>2027</strong>
             </h1>
             <p>Colegio Panamericano Colombo Sueco</p>
           </div>
