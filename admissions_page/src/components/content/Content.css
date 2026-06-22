@@ -1,213 +1,172 @@
-main{
-
-  width: 100vw;
-  background-image: radial-gradient(ellipse farthest-corner at 45px 30px , #fff 50%, rgba(0, 255, 0, 0) 0%, #fcdc14 50%);
-  margin: 0;
-  padding: 0;
-}
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-   
-  text-align: center;
-  
-}
-
-.main-content h1 {
+.admissions {
   width: 100%;
-  max-width: 1200px;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  padding: 10px 20px;
+  min-height: calc(100vh - 110px);
+  padding: 48px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(252, 220, 20, 0.22), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
 }
 
-.main-content-p{
-  padding: 10px 20px;
-}
-.main-content p {
+.admissions__hero {
   width: 100%;
-  max-width: 1200px;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  text-align: justify;
-  font-family: "Frank Ruhl Libre", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  color: #555;
-  line-height: 1.6;
-  
-   
-   
-}
-
-.admission-video {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  aspect-ratio: 16/9;
-   
-}
-
-.main-buttons {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-
-.btn {
-  position: relative;
-  display: inline-block;
-  padding: 12px 25px;
-  margin: 8px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: background-color 0.3s;
-  overflow: hidden;
-}
-
-.btn span {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.btn:hover span {
-  transform: scale(1.2); /* El texto se infla un 20% al pasar el mouse */
-  color: #fcdc14;
-}
-
-.btn-info {
-    
-  background-color: #044cac;
-}
-
-.btn-apply {
-  background-color: #044cac;
-}
-
-.btn-info:hover {
-  background-color: #0056b3;
-}
-
-.btn-apply:hover {
-  background-color: #0056b3;
-}
-
-@media (max-width: 2500px){
-  .admission-video {
-    width: 50%;
-    height: auto; 
-  }
-
-}
-@media (max-width: 1200px) {
-  .main-content h1 {
-    font-size: 1.75rem;
-  }
-
-  .main-content p {
-    font-size: 1rem;
-  }
-  .admission-video {
-    width: 60%;
-    height: auto; 
-  }
- 
-}
-
-@media (max-width: 992px) {
-  .main-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .main-content p {
-    font-size: 14px;
-  }
-
-  .btn {
-    padding: 10px 20px;
-  }
-
-  .btn span {
-    font-size: 0.95rem;
-  }
-  .admission-video {
-    width: 80%;
-    height: auto; 
-  }
-
-
-}
-
-@media (max-width: 768px) {
-  .main-content h1 {
-    font-size: 1.25rem;
-  }
-
-  .main-content p {
-    font-size: 0.9rem;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-    padding: 8px 15px;
-  }
-
-  .btn span {
-    font-size: 0.85rem;
-  }
-  .admission-video {
-    width: 90%;
-    height: auto; 
-  }
-}
-
-@media (max-width: 576px) {
-  .main-content h1 {
-    font-size: 1rem;
-  }
-
-  .main-content p {
-    font-size: 14px;
-    padding: 2px;
-  }
-
-  .btn {
-    padding: 6px 10px;
-    font-size: 0.8rem;
-  }
-
-  .admission-video {
-    width: 100%;
-     
-  }
-}
-
-.admission-video {
-  width: 100%;
-  height: 315px; /* Puedes ajustar esto dependiendo de la relación de aspecto */
-  max-width: 560px;
+  max-width: 1180px;
   margin: 0 auto;
+  padding: 42px 32px;
+
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 34px rgba(4, 76, 172, 0.12);
+}
+
+.admissions__label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 7px 16px;
+
+  background-color: rgba(252, 220, 20, 0.2);
+  color: #044cac;
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+.admissions h1 {
+  margin: 0 0 24px;
+  color: #1f2937;
+
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 800;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.admissions__text {
+  max-width: 980px;
+  margin: 0 auto 32px;
+}
+
+.admissions__text p {
+  margin-bottom: 18px;
+  color: #4b5563;
+
+  font-size: 17px;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.admissions__video {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto 30px;
+
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+  background-color: #000000;
+}
+
+.admissions__video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
   display: block;
+  border: none;
+}
+
+.admissions__actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.admissions__btn {
+  min-width: 210px;
+  padding: 14px 24px;
+
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.admissions__btn--primary {
+  background-color: #044cac;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(4, 76, 172, 0.3);
+}
+
+.admissions__btn--secondary {
+  background-color: #fcdc14;
+  color: #043f8f;
+  box-shadow: 0 8px 20px rgba(252, 220, 20, 0.32);
+}
+
+.admissions__btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
 }
 
 @media (max-width: 768px) {
-  .admission-video {
-    height: auto;
-    aspect-ratio: 16 / 9; /* Relación de aspecto 16:9 */
+  .admissions {
+    padding: 28px 14px;
+  }
+
+  .admissions__hero {
+    padding: 30px 20px;
+    border-radius: 18px;
+  }
+
+  .admissions__text p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .admissions__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admissions__btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admissions {
+    padding: 20px 10px;
+  }
+
+  .admissions__hero {
+    padding: 24px 16px;
+  }
+
+  .admissions__label {
+    font-size: 11px;
+  }
+
+  .admissions__text p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .admissions__video {
+    border-radius: 14px;
+  }
+
+  .admissions__btn {
+    font-size: 13px;
+    padding: 12px 18px;
   }
 }

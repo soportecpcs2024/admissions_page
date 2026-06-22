@@ -1,101 +1,145 @@
 .header {
   width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 5px;
-    background-color: #044cac;
-    color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #043f8f 0%, #0457c8 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+
+.header__content {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 16px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header__logo {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.header__subtitle {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fcdc14;
+  font-weight: 700;
+}
+
+.header__text h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 300;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.header__text h1 strong {
+  color: #fcdc14;
+  font-weight: 900;
+}
+
+.header__text p {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.header__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 11px 20px;
+  border-radius: 999px;
+
+  color: #044cac;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.header__button:hover {
+  background-color: #fcdc14;
+  color: #043f8f;
+  transform: translateY(-2px);
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .header__content {
+    padding: 18px 20px;
+    flex-direction: column;
+    text-align: center;
   }
 
-  .header h2{
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 45px;
+  .header__brand {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .header span{
-    color: #fcdc14 ;
-    font-weight: 900;
+  .header__logo {
+    width: 70px;
+    height: 70px;
   }
 
-  .header_link_return{
+  .header__button {
     width: 100%;
-    display: flex;
-    justify-content:flex-end;
-    margin-right: 20px;
-    margin-top: -10px;
-    
+    max-width: 260px;
   }
-  
-  .header_link_return a{
-     
-    padding: 8px;
-    border-radius: 5px;
-    box-shadow: rgba(248, 248, 248, 0.815) 0px 0px 16px;
+}
 
-  }
-  
-  .header-logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-img {
-    height: 60px;
-     
-  }
-  
-  .header-link {
-    color: rgba(255, 255, 255, 0.997);
-    text-decoration: none;
-  }
-  
-  @media (max-width: 480px) {
-    .header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .header-logo {
-      margin-bottom: 10px;
-    }
-    .header h2{
-      font-size: 14px;
-       
-    }
-     
-  }
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      text-align: center;
-    }
-     
-    
-  .header h2{
-    font-size: 26px;
-    
-  }
-  .header_link_return a{
-    font-size: 10px;
-  }
-  
-    .header-logo {
-      margin-bottom: 10px;
-    }
+/* Celulares */
+@media (max-width: 480px) {
+  .header__content {
+    padding: 14px 16px;
   }
 
-
-  @media (max-width: 2500px){
-    .header {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    
- 
-     
+  .header__logo {
+    width: 62px;
+    height: 62px;
   }
-  
+
+  .header__subtitle {
+    font-size: 11px;
+  }
+
+  .header__text h1 {
+    font-size: 24px;
+  }
+
+  .header__text p {
+    font-size: 13px;
+  }
+
+  .header__button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}

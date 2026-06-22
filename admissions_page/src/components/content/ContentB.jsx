@@ -5,45 +5,58 @@ import "./ContentB.css";
 
 const ContentB = () => {
   return (
-    <div className="content-container">
-      <div className="left-section">
-        <div className="image-text-container">
-          <LazyLoad height={200} offset={100}>
+    <main className="reservation">
+      <section className="reservation__container">
+        <div className="reservation__image-box">
+          <LazyLoad height={260} offset={100}>
             <img
               src="/antiguosR-small.JPG"
               srcSet="/antiguosR-small.JPG 500w, /antiguosR.JPG 1000w"
               sizes="(max-width: 600px) 500px, 1000px"
-              alt="Reserva"
-              className="reserva-image"
+              alt="Reserva de cupo CPCS"
+              className="reservation__image"
             />
           </LazyLoad>
-          <p className="overlay-text">
-            Para hacer tu reserva de cupo o consultar cómo va tu solicitud,
-            selecciona la opción según tus necesidades.
-          </p>
+
+          <div className="reservation__overlay">
+            <span>Estudiantes antiguos</span>
+            <h1>Reserva de cupo</h1>
+            <p>
+              Realiza tu reserva de cupo o consulta el estado de tu solicitud
+              seleccionando la opción correspondiente.
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="right-section">
-        <div className="card-reserva">
-          <FaRegCalendarAlt className="icon" />
+
+        <div className="reservation__actions">
           <a
             href="https://cpcs.q10.com/SolicitudesInstitucionales/NuevaSolicitud"
-            className="a-links"
+            className="reservation__card"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Reserva de cupo
+            <FaRegCalendarAlt className="reservation__icon" />
+            <div>
+              <h2>Reserva de cupo</h2>
+              <p>Inicia una nueva solicitud institucional.</p>
+            </div>
           </a>
-        </div>
-        <div className="card-reserva">
-          <FaSearch className="icon" />
+
           <a
             href="https://cpcs.q10.com/SolicitudesInstitucionales/ConsultarSolicitud"
-            className="a-links"
+            className="reservation__card"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Consultar estado de la reserva
+            <FaSearch className="reservation__icon" />
+            <div>
+              <h2>Consultar estado</h2>
+              <p>Revisa cómo va tu solicitud de reserva.</p>
+            </div>
           </a>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

@@ -5,41 +5,57 @@ import "./Content.css";
 const Content = () => {
   const navigate = useNavigate();
 
-  const handleOldStudentsClick = () => {
-    navigate("/antiguos");
-  };
-
   return (
-    <main className="main-content">
-      <h1>Bienvenidos a las Admisiones 2026</h1>
-      <div className="main-content-p">
-        <p>
-          Estamos emocionados de recibir a nuevos estudiantes para el año
-          académico 2026 en el Colegio Panamericano Colombo Sueco. A continuación, encontrarás toda la información necesaria para comenzar el proceso de admisión.
-        </p>
-        <p>
-          Nuestra oferta educativa es para todas las familias que deseen una excelente educación para sus hijos, con formación integral, con disciplina y esfuerzo, en donde las niñas y niños se conviertan en ciudadanos competentes y felices, capaces de responder a las exigencias del mundo actual con criterio ético y respeto, teniendo en cuenta nuestro enfoque basado en la palabra de Dios.
-        </p>
-      </div>
+    <main className="admissions">
+      <section className="admissions__hero">
+        <span className="admissions__label">Proceso de admisión</span>
 
-      <iframe
-        className="admission-video"
-        src="https://www.youtube.com/embed/Oy20XZLnQAc?si=zsL6W0OCickb21pY"
-        title="Video Admisiones"
-        allowFullScreen
-        loading="lazy"
-        width="100%"
-        height="400"
-      ></iframe>
+        <h1>Bienvenidos a las Admisiones 2027</h1>
 
-      <div className="main-buttons">
-        <a href="https://cpcs.q10.com/Preinscripcion" className="btn btn-info">
-          <span>Nuevos</span>
-        </a>
-        <button onClick={handleOldStudentsClick} className="btn btn-apply">
-          <span>Antiguos</span>
-        </button>
-      </div>
+        <div className="admissions__text">
+          <p>
+            Estamos emocionados de recibir a nuevos estudiantes para el año
+            académico 2027 en el Colegio Panamericano Colombo Sueco. A
+            continuación, encontrarás toda la información necesaria para iniciar
+            el proceso de admisión.
+          </p>
+
+          <p>
+            Nuestra oferta educativa está dirigida a las familias que desean una
+            formación integral para sus hijos, basada en la excelencia académica,
+            la disciplina, el esfuerzo, los valores y el respeto, teniendo como
+            fundamento nuestro enfoque basado en la palabra de Dios.
+          </p>
+        </div>
+
+        <div className="admissions__video">
+          <iframe
+            src="https://www.youtube.com/embed/Oy20XZLnQAc?si=zsL6W0OCickb21pY"
+            title="Video Admisiones CPCS"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div className="admissions__actions">
+          <a
+            href="https://cpcs.q10.com/Preinscripcion"
+            className="admissions__btn admissions__btn--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Estudiantes nuevos
+          </a>
+
+          <button
+            type="button"
+            onClick={() => navigate("/antiguos")}
+            className="admissions__btn admissions__btn--secondary"
+          >
+            Estudiantes antiguos
+          </button>
+        </div>
+      </section>
     </main>
   );
 };
